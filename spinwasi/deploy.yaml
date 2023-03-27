@@ -1,0 +1,32 @@
+apiVersion: apps/v1                                                  
+kind: Deployment
+metadata:
+  name: spinwasi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spinwasi
+  template:
+    metadata:
+      labels:
+        app: spinwasi
+    spec:
+      runtimeClassName: wasmtime-spin
+      containers:
+      - name: spinwasi
+        image: wasiacr.azurecr.io/spinwasi:latest
+        command: ["/"]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: spinwasi
+spec:
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  selector:
+    app: spinwasi

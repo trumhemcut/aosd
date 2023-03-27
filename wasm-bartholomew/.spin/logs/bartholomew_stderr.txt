@@ -1,0 +1,12 @@
+Request path: /index
+Base URL: Some("http://localhost:3000")
+scripts: registering get_page
+scripts: registering blogs
+Path /content/index.md
+Responded: /index
+Request path: /favicon.ico
+Base URL: Some("http://localhost:3000")
+scripts: registering get_page
+scripts: registering blogs
+Path /content/favicon.md
+Not found: /favicon.ico
