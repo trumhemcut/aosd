@@ -24,7 +24,7 @@ date = "Mar. 27, 2023"
 # Anything after this line is considered Markdown content
 ---
 
-Hello everyone, great to see you here at Azure Open Source Day - 2023. Have a great evening 🍻 🍲 !!!
+Hello everyone, great to see you here at **Azure Open Source Day - 2023**. Have a great evening 🍻 🍲 !!!
 
 This is an example home page written in _Markdown_.
 
